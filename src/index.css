@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Corevia Technologies Design System
+/* CoreVia Technologies Design System
    Brand: Dark Navy + Electric Cyan
    All colors MUST be HSL.
 */
@@ -116,6 +116,12 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    background-image:
+      linear-gradient(180deg, hsl(228 72% 8% / 0.95), hsl(225 68% 7% / 0.98)),
+      url("./assets/hero-network.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -159,6 +165,28 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+  .site-shell {
+    position: relative;
+    isolation: isolate;
+  }
+  .site-shell::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+      radial-gradient(circle at 18% 18%, hsl(193 100% 50% / 0.16), transparent 24%),
+      radial-gradient(circle at 82% 22%, hsl(217 91% 60% / 0.18), transparent 28%),
+      linear-gradient(180deg, hsl(230 68% 10% / 0.08), hsl(225 72% 7% / 0.22));
+    pointer-events: none;
+  }
+  .section-shell {
+    @apply rounded-[30px] border border-white/10 bg-[#07122d]/75 backdrop-blur-sm shadow-card;
+  }
+  .section-shell-light {
+    background: linear-gradient(180deg, hsl(225 40% 97% / 0.96), hsl(220 28% 92% / 0.92));
+    @apply rounded-[28px] border border-white/30 shadow-card;
   }
 }
 

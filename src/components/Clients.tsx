@@ -13,7 +13,7 @@ const marqueeClients = [...clients, ...clients, ...clients];
 
 const ClientCard = ({ name, abbr, color }: { name: string; abbr: string; color: string }) => (
   <div
-    className="flex-shrink-0 flex items-center gap-3 bg-card border border-border rounded-2xl px-8 py-5 shadow-card mx-4 hover:shadow-elegant hover:border-primary/40 transition-smooth hover:-translate-y-1"
+    className="mx-4 flex flex-shrink-0 items-center gap-3 rounded-2xl border border-slate-200 bg-white/92 px-8 py-5 shadow-[0_16px_38px_-26px_rgba(15,23,42,0.35)] transition-smooth hover:-translate-y-1 hover:border-primary/40"
     style={{ minWidth: "200px" }}
   >
     {/* Logo placeholder with brand initials */}
@@ -23,24 +23,24 @@ const ClientCard = ({ name, abbr, color }: { name: string; abbr: string; color: 
     >
       {abbr}
     </div>
-    <span className="font-display font-semibold text-base text-foreground whitespace-nowrap">
+    <span className="whitespace-nowrap font-display text-base font-semibold text-slate-900">
       {name}
     </span>
   </div>
 );
 
 const Clients = () => (
-  <section id="clients" className="py-20 bg-background overflow-hidden">
-    {/* Header */}
-    <div className="container text-center mb-12">
+  <section id="clients" className="overflow-hidden py-20">
+    <div className="container section-shell-light px-6 py-10 md:px-10 md:py-12">
+    <div className="text-center mb-12">
       <span className="text-primary font-semibold tracking-widest text-xs uppercase">
         Trusted By
       </span>
-      <h2 className="font-display font-bold text-3xl md:text-4xl mt-3 mb-4 text-foreground">
+      <h2 className="mt-3 mb-4 font-display text-3xl font-bold text-slate-900 md:text-4xl">
         Our Clients
       </h2>
-      <p className="text-muted-foreground max-w-xl mx-auto text-sm leading-relaxed">
-        Industry-leading enterprises trust Corevia Technologies to power their
+      <p className="mx-auto max-w-xl text-sm leading-relaxed text-slate-600">
+        Industry-leading enterprises trust CoreVia Technologies to power their
         workforce and technology initiatives.
       </p>
     </div>
@@ -51,13 +51,13 @@ const Clients = () => (
       <div
         className="absolute left-0 top-0 h-full w-32 z-10 pointer-events-none"
         style={{
-          background: "linear-gradient(to right, hsl(222 47% 6%) 0%, transparent 100%)",
+          background: "linear-gradient(to right, hsl(225 40% 97%) 0%, transparent 100%)",
         }}
       />
       <div
         className="absolute right-0 top-0 h-full w-32 z-10 pointer-events-none"
         style={{
-          background: "linear-gradient(to left, hsl(222 47% 6%) 0%, transparent 100%)",
+          background: "linear-gradient(to left, hsl(225 40% 97%) 0%, transparent 100%)",
         }}
       />
 
@@ -83,6 +83,7 @@ const Clients = () => (
         100% { transform: translateX(calc(-100% / 3)); }
       }
     `}</style>
+    </div>
   </section>
 );
 

@@ -9,9 +9,9 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => (
-  <div className="min-h-screen bg-background">
+  <div className="site-shell min-h-screen">
     <Navbar />
-    <main>
+    <main className="px-4 pb-8 pt-6 md:px-6 lg:px-8">
       <Hero />
       <About />
       <Services />

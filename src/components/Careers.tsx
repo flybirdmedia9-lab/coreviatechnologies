@@ -2,16 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Briefcase, GraduationCap, Rocket } from "lucide-react";
 
 const Careers = () => (
-  <section id="careers" className="py-24 bg-background">
-    <div className="container grid lg:grid-cols-2 gap-12 items-center">
+  <section id="careers" className="py-20">
+    <div className="container section-shell grid gap-12 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-2 lg:items-center">
       <div>
         <span className="text-secondary font-semibold tracking-widest text-xs uppercase">Careers</span>
-        <h2 className="font-display font-bold text-3xl md:text-5xl text-primary mt-3 mb-6">
-          Build your career with Corevia.
+        <h2 className="mt-3 mb-6 font-display text-3xl font-bold text-white md:text-5xl">
+          Build your career with CoreVia.
         </h2>
-        <p className="text-muted-foreground leading-relaxed mb-8">
+        <p className="mb-8 leading-relaxed text-slate-300">
           Whether you're a seasoned technology professional or just starting your journey,
-          Corevia connects you with opportunities at top US enterprises. We invest in our people
+          CoreVia connects you with opportunities at top US enterprises. We invest in our people
           with continuous learning, competitive benefits, and meaningful projects.
         </p>
         <Button variant="hero" size="lg" asChild>
@@ -26,10 +26,10 @@ const Careers = () => (
           { icon: Rocket, title: "Fast Placement", text: "From application to onboarding in days." },
           { icon: Briefcase, title: "Nationwide", text: "Opportunities across all 50 US states." },
         ].map(({ icon: Icon, title, text }) => (
-          <div key={title} className="bg-gradient-card border border-border rounded-xl p-6 shadow-card">
+          <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-card backdrop-blur-sm">
             <Icon className="text-secondary mb-3" size={24} />
-            <h3 className="font-display font-bold text-lg text-primary mb-1">{title}</h3>
-            <p className="text-sm text-muted-foreground">{text}</p>
+            <h3 className="mb-1 font-display text-lg font-bold text-white">{title}</h3>
+            <p className="text-sm text-slate-300">{text}</p>
           </div>
         ))}
       </div>

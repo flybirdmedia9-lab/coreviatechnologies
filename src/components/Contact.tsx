@@ -19,14 +19,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-muted/40">
-      <div className="container grid lg:grid-cols-5 gap-10">
+    <section id="contact" className="py-20">
+      <div className="container section-shell grid gap-10 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <span className="text-secondary font-semibold tracking-widest text-xs uppercase">Get in Touch</span>
-          <h2 className="font-display font-bold text-3xl md:text-5xl text-primary mt-3 mb-6">
+          <h2 className="mt-3 mb-6 font-display text-3xl font-bold text-white md:text-5xl">
             Let's build your team.
           </h2>
-          <p className="text-muted-foreground leading-relaxed mb-10">
+          <p className="mb-10 leading-relaxed text-slate-300">
             Tell us about your hiring needs or career goals — our team will respond within one business day.
           </p>
 
@@ -36,8 +36,8 @@ const Contact = () => {
                 <User size={18} />
               </div>
               <div>
-                <p className="font-semibold text-primary">Sai Srinivas Madamoni</p>
-                <p className="text-sm text-muted-foreground">Founder</p>
+                <p className="font-semibold text-white">Sai Srinivas Madamoni</p>
+                <p className="text-sm text-slate-300">Founder</p>
               </div>
             </li>
             <li className="flex items-start gap-4">
@@ -45,8 +45,8 @@ const Contact = () => {
                 <User size={18} />
               </div>
               <div>
-                <p className="font-semibold text-primary">Gagan Somlok</p>
-                <p className="text-sm text-muted-foreground">Managing Director &amp; Co-Founder</p>
+                <p className="font-semibold text-white">Gagan Somlok</p>
+                <p className="text-sm text-slate-300">Managing Director &amp; Co-Founder</p>
               </div>
             </li>
             <li className="flex items-start gap-4">
@@ -54,8 +54,8 @@ const Contact = () => {
                 <MapPin size={18} />
               </div>
               <div>
-                <p className="font-semibold text-primary">Headquarters</p>
-                <p className="text-sm text-muted-foreground">32A Barnum Ave, Plainview, NY 11803</p>
+                <p className="font-semibold text-white">Headquarters</p>
+                <p className="text-sm text-slate-300">32A Barnum Ave, Plainview, NY 11803</p>
               </div>
             </li>
             <li className="flex items-start gap-4">
@@ -63,8 +63,8 @@ const Contact = () => {
                 <Mail size={18} />
               </div>
               <div>
-                <p className="font-semibold text-primary">Email</p>
-                <a href="mailto:info@coreviatechnology.com" className="text-sm text-muted-foreground hover:text-secondary">
+                <p className="font-semibold text-white">Email</p>
+                <a href="mailto:info@coreviatechnology.com" className="text-sm text-slate-300 hover:text-secondary">
                   info@coreviatechnology.com
                 </a>
               </div>
@@ -74,14 +74,16 @@ const Contact = () => {
                 <Phone size={18} />
               </div>
               <div>
-                <p className="font-semibold text-primary">Phone</p>
-                <p className="text-sm text-muted-foreground">+1 (516) 000-0000</p>
+                <p className="font-semibold text-white">Phone</p>
+                <a href="tel:+15163971234" className="text-sm text-slate-300 hover:text-secondary">
+                  (516) 397-1234
+                </a>
               </div>
             </li>
           </ul>
         </div>
 
-        <form onSubmit={onSubmit} className="lg:col-span-3 bg-background rounded-2xl p-8 md:p-10 shadow-elegant border border-border">
+        <form onSubmit={onSubmit} className="lg:col-span-3 rounded-[28px] border border-white/10 bg-white/95 p-8 text-slate-900 shadow-elegant md:p-10">
           <div className="grid sm:grid-cols-2 gap-5">
             <div>
               <Label htmlFor="name">Full Name</Label>

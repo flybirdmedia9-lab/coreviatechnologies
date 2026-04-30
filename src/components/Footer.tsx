@@ -1,26 +1,25 @@
 import { Linkedin, Twitter, Instagram, Youtube, Facebook } from "lucide-react";
-import coreviaNewLogo from "@/assets/corevia-new-logo.png";
+import coreviaLockupLogo from "@/assets/corevia-lockup.png";
 
 const Footer = () => (
-  <footer className="bg-background border-t border-border text-foreground">
-    <div className="container py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+  <footer className="pt-10 text-foreground">
+    <div className="container rounded-[26px] border border-white/20 bg-[linear-gradient(180deg,hsl(225_35%_96%_/_0.96),hsl(220_24%_88%_/_0.92))] px-6 py-10 md:px-10">
+    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
       <div>
-        {/* ── Logo ── */}
-        <div className="mb-5">
+        <div className="mb-5 inline-block">
           <img
-            src={coreviaNewLogo}
-            alt="Corevia Technologies"
-            className="h-20 w-auto object-contain"
-            style={{ mixBlendMode: "screen", filter: "brightness(1.1) contrast(1.05)" }}
+            src={coreviaLockupLogo}
+            alt="CoreVia Technologies"
+            className="h-12 w-auto object-contain"
             loading="lazy"
           />
         </div>
-        <p className="text-sm text-muted-foreground leading-relaxed">
-          Building Technology. Delivering Talent. Trusted US IT staffing and workforce solutions partner.
+        <p className="text-sm leading-relaxed text-slate-600">
+          Trusted US IT Consulting & Staffing partner.
         </p>
         <div className="flex gap-3 mt-6">
           {[Linkedin, Twitter, Instagram, Youtube, Facebook].map((Icon, i) => (
-            <a key={i} href="#" aria-label="social" className="w-9 h-9 rounded-full bg-muted hover:bg-primary text-muted-foreground hover:text-primary-foreground flex items-center justify-center transition-smooth">
+            <a key={i} href="#" aria-label="social" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#0a2466] text-white transition-smooth hover:bg-primary">
               <Icon size={16} />
             </a>
           ))}
@@ -28,8 +27,8 @@ const Footer = () => (
       </div>
 
       <div>
-        <h4 className="font-display font-bold mb-4">Company</h4>
-        <ul className="space-y-2 text-sm text-primary-foreground/70">
+        <h4 className="mb-4 font-display font-bold text-slate-900">Company</h4>
+        <ul className="space-y-2 text-sm text-slate-600">
           {["About", "Services", "Careers", "Contact"].map((l) => (
             <li key={l}><a href={`#${l.toLowerCase()}`} className="hover:text-primary transition-smooth">{l}</a></li>
           ))}
@@ -37,8 +36,8 @@ const Footer = () => (
       </div>
 
       <div>
-        <h4 className="font-display font-bold mb-4">Services</h4>
-        <ul className="space-y-2 text-sm text-primary-foreground/70">
+        <h4 className="mb-4 font-display font-bold text-slate-900">Services</h4>
+        <ul className="space-y-2 text-sm text-slate-600">
           {["IT Staffing", "Consulting", "Tech Solutions", "Managed Services", "Cloud & DevOps"].map((l) => (
             <li key={l}>{l}</li>
           ))}
@@ -46,8 +45,8 @@ const Footer = () => (
       </div>
 
       <div>
-        <h4 className="font-display font-bold mb-4">Contact</h4>
-        <ul className="space-y-2 text-sm text-muted-foreground">
+        <h4 className="mb-4 font-display font-bold text-slate-900">Contact</h4>
+        <ul className="space-y-2 text-sm text-slate-600">
           <li>32A Barnum Ave</li>
           <li>Plainview, NY 11803</li>
           <li><a href="mailto:info@coreviatechnology.com" className="hover:text-primary">info@coreviatechnology.com</a></li>
@@ -55,11 +54,12 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="border-t border-border">
-      <div className="container py-5 flex flex-col sm:flex-row justify-between items-center gap-2">
-        <p className="text-xs text-muted-foreground/70">© {new Date().getFullYear()} Corevia Technologies. All rights reserved.</p>
-        <p className="text-xs text-muted-foreground/70">Building Technology. Delivering Talent.</p>
+    <div className="mt-8 border-t border-slate-300/80 pt-5">
+      <div className="flex flex-col items-center justify-between gap-2 text-center sm:flex-row sm:text-left">
+        <p className="text-xs text-slate-600">© {new Date().getFullYear()} CoreVia Technologies. All rights reserved.</p>
+        <p className="text-xs text-slate-600">Building Technology. Delivering Talent.</p>
       </div>
+    </div>
     </div>
   </footer>
 );
