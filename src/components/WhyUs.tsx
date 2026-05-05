@@ -17,7 +17,7 @@ const WhyUs = () => (
     <div className="container relative section-shell-light px-6 py-10 md:px-10 md:py-12">
       <div className="text-center max-w-2xl mx-auto mb-16">
         <span className="text-primary font-semibold tracking-widest text-xs uppercase">Why CoreVia</span>
-        <h2 className="mt-3 mb-4 font-display text-3xl font-bold text-slate-900 md:text-5xl">
+        <h2 className="mt-3 mb-4 font-display text-3xl font-bold md:text-5xl">
           The CoreVia Advantage
         </h2>
         <p className="text-slate-600">
@@ -34,7 +34,7 @@ const WhyUs = () => (
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-primary/20 bg-primary/10 transition-smooth group-hover:bg-primary/20">
               <Icon className="text-primary" size={24} />
             </div>
-            <h3 className="mb-2 font-display text-xl font-bold text-slate-900">{title}</h3>
+            <h3 className="mb-2 font-display text-xl font-bold">{title}</h3>
             <p className="text-sm leading-relaxed text-slate-600">{desc}</p>
           </div>
         ))}

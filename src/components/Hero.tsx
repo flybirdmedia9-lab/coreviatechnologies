@@ -18,7 +18,7 @@ const Hero = () => (
               US IT STAFFING & WORKFORCE SOLUTIONS
             </span>
 
-            <h1 className="mb-5 font-display text-4xl font-extrabold leading-[1.08] text-foreground md:text-6xl">
+            <h1 className="mb-5 font-display text-4xl font-extrabold leading-[1.08] md:text-6xl">
               Building Technology.
               <br />
               Delivering Talent.

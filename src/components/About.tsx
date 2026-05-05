@@ -29,7 +29,7 @@ const About = () => (
 
       <div>
         <span className="text-secondary font-semibold tracking-widest text-xs uppercase">About CoreVia</span>
-        <h2 className="mt-3 mb-6 font-display text-3xl font-bold text-white md:text-5xl">
+        <h2 className="mt-3 mb-6 font-display text-3xl font-bold md:text-5xl">
           A bridge between <span className="text-secondary">talent</span> and opportunity.
         </h2>
         <p className="mb-5 leading-relaxed text-slate-300">

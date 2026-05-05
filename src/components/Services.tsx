@@ -44,7 +44,7 @@ const Services = () => (
       <div className="section-shell-light px-6 py-10 md:px-10 md:py-12">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-secondary">What We Offer</span>
-          <h2 className="mt-3 mb-3 font-display text-3xl font-bold text-slate-900 md:text-5xl">Our Services</h2>
+          <h2 className="mt-3 mb-3 font-display text-3xl font-bold md:text-5xl">Our Services</h2>
           <p className="text-slate-600">
             Tailored consulting, technology, and staffing solutions designed to help enterprises move faster,
             scale smarter, and hire the right talent.
@@ -60,7 +60,7 @@ const Services = () => (
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-primary text-white shadow-warm">
                 <Icon size={26} />
               </div>
-              <h3 className="mb-3 font-display text-lg font-bold text-slate-900">{title}</h3>
+              <h3 className="mb-3 font-display text-lg font-bold">{title}</h3>
               <p className="text-sm leading-6 text-slate-600">{desc}</p>
             </article>
           ))}

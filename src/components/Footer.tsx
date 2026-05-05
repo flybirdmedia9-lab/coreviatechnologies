@@ -27,7 +27,7 @@ const Footer = () => (
       </div>
 
       <div>
-        <h4 className="mb-4 font-display font-bold text-slate-900">Company</h4>
+        <h4 className="mb-4 font-display font-bold tracking-tight text-primary">Company</h4>
         <ul className="space-y-2 text-sm text-slate-600">
           {["About", "Services", "Careers", "Contact"].map((l) => (
             <li key={l}><a href={`#${l.toLowerCase()}`} className="hover:text-primary transition-smooth">{l}</a></li>
@@ -36,20 +36,20 @@ const Footer = () => (
       </div>
 
       <div>
-        <h4 className="mb-4 font-display font-bold text-slate-900">Services</h4>
+        <h4 className="mb-4 font-display font-bold">Services</h4>
         <ul className="space-y-2 text-sm text-slate-600">
           {["IT Staffing", "Consulting", "Tech Solutions", "Managed Services", "Cloud & DevOps"].map((l) => (
-            <li key={l}>{l}</li>
+            <li key={l}><a href="#services" className="hover:text-primary transition-smooth">{l}</a></li>
           ))}
         </ul>
       </div>
 
       <div>
-        <h4 className="mb-4 font-display font-bold text-slate-900">Contact</h4>
+        <h4 className="mb-4 font-display font-bold">Contact</h4>
         <ul className="space-y-2 text-sm text-slate-600">
           <li>32A Barnum Ave</li>
           <li>Plainview, NY 11803</li>
-          <li><a href="mailto:info@coreviatechnology.com" className="hover:text-primary">info@coreviatechnology.com</a></li>
+          <li><a href="mailto:Bandari@coreviatek.com" className="hover:text-primary">Bandari@coreviatek.com</a></li>
         </ul>
       </div>
     </div>
