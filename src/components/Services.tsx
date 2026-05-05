@@ -58,6 +58,8 @@ const Services = () => (
               href="#contact"
               onClick={() => {
                 const el = document.getElementById("message") as HTMLTextAreaElement;
+                const serviceEl = document.getElementById("selectedService") as HTMLInputElement;
+                if (serviceEl) serviceEl.value = title;
                 if (el) {
                   el.value = `I am interested in ${title}. `;
                   el.focus();

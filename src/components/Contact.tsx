@@ -18,8 +18,9 @@ const Contact = () => {
     const company = formData.get("company");
     const phone = formData.get("phone");
     const message = formData.get("message");
+    const service = formData.get("selectedService") || "General Inquiry";
 
-    const whatsappMessage = `*New Inquiry from CoreVia Site*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Company:* ${company}%0A*Phone:* ${phone}%0A*Message:* ${message}`;
+    const whatsappMessage = `*New Inquiry from CoreVia Site*%0A%0A*Service:* ${service}%0A*Name:* ${name}%0A*Email:* ${email}%0A*Company:* ${company}%0A*Phone:* ${phone}%0A*Message:* ${message}`;
     const whatsappUrl = `https://wa.me/15163971234?text=${whatsappMessage}`;
 
     setTimeout(() => {
@@ -96,6 +97,7 @@ const Contact = () => {
         </div>
 
         <form onSubmit={onSubmit} className="lg:col-span-3 rounded-[28px] border border-white/10 bg-white/95 p-8 text-slate-900 shadow-elegant md:p-10">
+          <input type="hidden" id="selectedService" name="selectedService" value="" />
           <div className="grid sm:grid-cols-2 gap-5">
             <div>
               <Label htmlFor="name">Full Name</Label>
