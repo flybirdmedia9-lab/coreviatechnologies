@@ -53,16 +53,19 @@ const Services = () => (
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {services.map(({ icon: Icon, title, desc }) => (
-            <article
+            <a
               key={title}
-              className="group rounded-[22px] border border-slate-200 bg-white/90 p-6 text-center shadow-[0_16px_40px_-24px_rgba(15,23,42,0.35)] transition-smooth hover:-translate-y-1 hover:shadow-[0_20px_50px_-22px_rgba(0,99,186,0.28)]"
+              href="#contact"
+              className="group block rounded-[22px] border border-slate-200 bg-white/90 p-6 text-center shadow-[0_16px_40px_-24px_rgba(15,23,42,0.35)] transition-smooth hover:-translate-y-1 hover:shadow-[0_20px_50px_-22px_rgba(0,99,186,0.28)]"
             >
-              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-primary text-white shadow-warm">
-                <Icon size={26} />
-              </div>
-              <h3 className="mb-3 font-display text-lg font-bold">{title}</h3>
-              <p className="text-sm leading-6 text-slate-600">{desc}</p>
-            </article>
+              <article>
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-primary text-white shadow-warm">
+                  <Icon size={26} />
+                </div>
+                <h3 className="mb-3 font-display text-lg font-bold">{title}</h3>
+                <p className="text-sm leading-6 text-slate-600">{desc}</p>
+              </article>
+            </a>
           ))}
         </div>
 
