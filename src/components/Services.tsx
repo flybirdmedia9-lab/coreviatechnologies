@@ -56,6 +56,13 @@ const Services = () => (
             <a
               key={title}
               href="#contact"
+              onClick={() => {
+                const el = document.getElementById("message") as HTMLTextAreaElement;
+                if (el) {
+                  el.value = `I am interested in ${title}. `;
+                  el.focus();
+                }
+              }}
               className="group block rounded-[22px] border border-slate-200 bg-white/90 p-6 text-center shadow-[0_16px_40px_-24px_rgba(15,23,42,0.35)] transition-smooth hover:-translate-y-1 hover:shadow-[0_20px_50px_-22px_rgba(0,99,186,0.28)]"
             >
               <article>
